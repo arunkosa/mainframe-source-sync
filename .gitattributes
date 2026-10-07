@@ -1,0 +1,85 @@
+# =============================================================================
+# .gitattributes
+# Enforce consistent line endings across platforms. These scripts execute on
+# z/OS USS / Unix; CRLF line endings will break Bash execution ("$'\r':
+# command not found"), so LF is enforced repo-wide regardless of the
+# committer's OS.
+# =============================================================================
+* text=auto eol=lf
+
+# file encodings for Rocket Git for Z version 2.43 and higher
+*.cbl zos-working-tree-encoding=IBM-1047
+*.spcbl zos-working-tree-encoding=IBM-1047
+*.cob zos-working-tree-encoding=IBM-1047
+*.cobol zos-working-tree-encoding=IBM-1047
+*.spsql zos-working-tree-encoding=IBM-1047
+*.jcl zos-working-tree-encoding=IBM-1047
+*.lnk zos-working-tree-encoding=IBM-1047
+*.cntl zos-working-tree-encoding=IBM-1047
+*.proc zos-working-tree-encoding=IBM-1047
+*.prc zos-working-tree-encoding=IBM-1047
+*.cpy zos-working-tree-encoding=IBM-1047
+*.copy zos-working-tree-encoding=IBM-1047
+*.copybook zos-working-tree-encoding=IBM-1047
+*.bnd zos-working-tree-encoding=IBM-1047
+*.pli zos-working-tree-encoding=IBM-1047
+*.pl1 zos-working-tree-encoding=IBM-1047
+*.inc zos-working-tree-encoding=IBM-1047
+*.include zos-working-tree-encoding=IBM-1047
+*.asm zos-working-tree-encoding=IBM-1047
+*.s zos-working-tree-encoding=IBM-1047
+*.hla zos-working-tree-encoding=IBM-1047
+*.hlasm zos-working-tree-encoding=IBM-1047
+*.rex zos-working-tree-encoding=IBM-1047
+*.rexx zos-working-tree-encoding=IBM-1047
+*.mac zos-working-tree-encoding=IBM-1047
+*.copyasm zos-working-tree-encoding=IBM-1047
+*.bms zos-working-tree-encoding=IBM-1047
+*.mfs zos-working-tree-encoding=IBM-1047
+*.gml zos-working-tree-encoding=IBM-1047
+*.gmli zos-working-tree-encoding=IBM-1047
+*.ddl zos-working-tree-encoding=IBM-1047
+*.unk zos-working-tree-encoding=IBM-1047
+
+*.c zos-working-tree-encoding=UTF-8
+*.cpp zos-working-tree-encoding=UTF-8
+*.h zos-working-tree-encoding=UTF-8
+*.groovy zos-working-tree-encoding=UTF-8
+*.java zos-working-tree-encoding=UTF-8
+*.py zos-working-tree-encoding=UTF-8
+*.sql zos-working-tree-encoding=UTF-8
+*.sh zos-working-tree-encoding=UTF-8
+*.yaml zos-working-tree-encoding=UTF-8
+*.yml zos-working-tree-encoding=UTF-8
+*.json zos-working-tree-encoding=UTF-8
+*.xml zos-working-tree-encoding=UTF-8
+*.html zos-working-tree-encoding=UTF-8
+*.htm zos-working-tree-encoding=UTF-8
+*.properties zos-working-tree-encoding=UTF-8
+*.md zos-working-tree-encoding=UTF-8
+*.txt zos-working-tree-encoding=IBM-1047
+*.log zos-working-tree-encoding=IBM-1047
+*.output zos-working-tree-encoding=UTF-8
+*.config zos-working-tree-encoding=UTF-8
+*.BAT zos-working-tree-encoding=IBM-1047
+*.sqr zos-working-tree-encoding=IBM-1047
+
+*.gitignore zos-working-tree-encoding=UTF-8
+*.gitattributes zos-working-tree-encoding=UTF-8
+*.gitkeep zos-working-tree-encoding=UTF-8
+
+# binary files
+*.jar binary
+*.tar binary
+*.zip binary
+*.gz binary
+*.tgz binary
+*.war binary
+*.ear binary
+*.exe binary
+*.exec binary
+*.dll binary
+*.so binary
+*.png binary
+*.jpg binary
+*.jpeg binary

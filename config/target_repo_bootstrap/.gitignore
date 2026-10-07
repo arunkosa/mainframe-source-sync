@@ -1,0 +1,11 @@
+# =============================================================================
+# .gitignore
+# Bootstrapped automatically into the target source-mirror repo by
+# ensure_target_bootstrap_files() (lib/git_ops.sh) on first sync run.
+# =============================================================================
+
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*~

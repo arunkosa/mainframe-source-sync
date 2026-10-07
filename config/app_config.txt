@@ -1,0 +1,7 @@
+PROJECT_WORKSPACE=/u/your-user/git_repos/open-source
+PROJECT_NAME=mainframe-source-sync
+
+# Absolute path to the real (untracked) sync.env for this environment, kept
+# outside the repo so a future `git pull` of this repo never conflicts with
+# or overwrites it. Copy config/sync.env.template here once per environment.
+PROJECT_CONFIG=

@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  smoke-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run Bash smoke tests
+        shell: bash
+        run: |
+          chmod +x tests/*.sh
+          bash tests/test_file_ops.sh
+          bash tests/test_logging.sh
+          bash tests/test_git_ops.sh
